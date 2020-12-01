@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/harris-sandbox-293410/github.com/harris-agyeman/harris-pro:$SHORT_SHA', '.']
+  
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '-t', 'gcr.io/harris-sandbox-293410/harris-pro:$SHORT_SHA']
+  
+  
+ 
