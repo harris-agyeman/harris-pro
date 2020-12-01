@@ -6,4 +6,4 @@ steps:
   args: ['push', 'gcr.io/harris-sandbox-293410/github.com/harris-agyeman/harris-pro:$SHORT_SHA']
   
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['beta', 'run', 'deploy', 'harris-pro', '--region=europe-west2', '--platform=managed', '--image=gcr.io/harris-sandbox-293410/github.com/harris-agyeman/harris-pro:$SHORT_SHA']
+  args: ['beta', 'run', 'deploy', 'harris-pro', '--region=europe-west1', '--platform=managed', '--image=gcr.io/harris-sandbox-293410/github.com/harris-agyeman/harris-pro:$SHORT_SHA']
